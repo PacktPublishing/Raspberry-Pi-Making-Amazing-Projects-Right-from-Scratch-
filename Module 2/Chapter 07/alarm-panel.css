@@ -1,0 +1,247 @@
+/* Clear browser margin and padding defaults */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p {
+margin:0;padding:0;-webkit-text-size-adjust:none;
+}
+
+body {
+	background: #ffffff;
+	color: #4A5651;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size:10px;  
+	height: 100%;
+	padding:0;
+	margin:0 auto;
+	max-width:320px;
+	min-width:240px;
+	text-align: left;
+	width:100%;
+	-webkit-box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.50);
+	-moz-box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.50);
+	box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.50);
+}
+
+p, .zoneLabel {
+  font-size:16px;
+  margin:5px;
+  line-height:1.4;
+  color:#4A5651;
+}
+
+#header h1 {
+  font-size:20px;
+  line-height:40px;
+  margin:0;
+  padding:0 0 0 15px;
+  text-align:center;
+  text-overflow: ellipsis;
+  font-weight:bold;
+}
+
+.zoneControl, .masterControl{
+	border-bottom:1px solid #dddddd;
+	margin-top:5px;
+	margin-bottom:0px;
+	padding:5px;
+	display:block;
+	width:100%;
+}
+
+.zoneLabel {
+	font-weight:bold;
+	text-overflow:ellipsis;
+}
+
+input[type="submit"] {
+  border: none;
+  background-color: #0b70cc;
+  color: white;
+  height: 32px;
+  display: block;
+  padding: 4px 7px;
+  float: left;
+  border-radius: 8px;
+  position: relative;
+  bottom: 1px;
+  margin-left: 4px;
+  text-align: center;
+}
+input[type="submit"]:hover {background-color: #b2ceec;color: #0b70cc;border: none;border: 1px solid #b2ceec;}
+
+/* Flashing animation */
+@-webkit-keyframes flash{0%, 50%, 100% {opacity: 1;} 25%, 75% {opacity: 0;}}
+@keyframes flash {0%, 50%, 100% {opacity: 1;} 25%, 75% {opacity: 0;}}
+.flash {
+	-webkit-animation-name:
+	flash;animation-name:
+	flash;color:#f00000;
+}
+.animated { 
+	-webkit-animation-duration: 1s; 
+	animation-duration: 1s; 
+	-webkit-animation-fill-mode: both; 
+	animation-fill-mode: both; 
+	animation-iteration-count:infinite; 
+	-webkit-animation-iteration-count:infinite; 
+}
+
+/*
+	ON/OFF SWITCH STYLES
+	The rather cool On/Off switch styling was generated on
+	https://proto.io/freebies/onoff/
+*/
+.onoffswitch {
+  position: relative;
+  width: 90px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+  display: none;
+}
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+}
+
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+  .onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+
+  .onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34C290;
+    color: #FFFFFF;
+  }
+
+  .onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE;
+    color: #999999;
+    text-align: right;
+  }
+
+.onoffswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 56px;
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+
+.masterswitch {
+  position: relative;
+  width: 90px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.masterswitch-checkbox {
+  display: none;
+}
+
+.masterswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+}
+
+.masterswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.masterswitch-inner:before, .masterswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 12px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.masterswitch-inner:before {
+  content: "ARMED";
+  padding-left: 10px;
+  background-color: #F00000;
+  color: #FFFFFF;
+}
+
+.masterswitch-inner:after {
+  content: "OFF";
+  padding-right: 10px;
+  background-color: #EEEEEE;
+  color: #999999;
+  text-align: right;
+}
+
+.masterswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 56px;
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.masterswitch-checkbox:checked + .masterswitch-label .masterswitch-inner {
+  margin-left: 0;
+}
+
+.masterswitch-checkbox:checked + .masterswitch-label .masterswitch-switch {
+  right: 0px;
+}
+/* END OF SWITCH STYLES */
