@@ -1,6 +1,6 @@
 Code files for courses
 
-# Module 1:Raspberry Pi By Example
+# Module 1: Raspberry Pi By Example
 ## What Will You Learn
 * Set up your Raspberry Pi and get it ready for some interesting real-life projects
 * Work with images, videos, webcams, and the Pi camera and create amazing time-lapse videos
@@ -19,8 +19,8 @@ The sections in Chapter 13 describes the steps of installing PHP and MySQL, also
 * [Learning Raspberry Pi](https://www.packtpub.com/hardware-and-creative/learning-raspberry-pi?utm_source=github&utm_medium=repository&utm_campaign=9781783982820)
 * [Raspberry Pi Cookbook for Python Programmers](https://www.packtpub.com/hardware-and-creative/raspberry-pi-cookbook-python-programmers?utm_source=github&utm_medium=repository&utm_campaign=9781849696623)
 
-# Module 2:Building a Home Security System with Raspberry Pi
-##Ehat Will You Learn
+# Module 2: Building a Home Security System with Raspberry Pi
+##What Will You Learn
 *	Understand the concepts behind alarm systems and intrusion detection devices
 *	Connect sensors and devices to the on-board digital GPIO ports safely
 *	Monitor and control connected devices easily using Bash shell scripting
